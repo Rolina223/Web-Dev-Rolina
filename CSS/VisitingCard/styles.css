@@ -1,0 +1,29 @@
+.img{
+    width:300px;
+    height: 300px;
+    
+}
+.card{
+    color: rgb(224, 255, 20);
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content:space-around;
+    background-color: rgb(250, 67, 0);
+    border-bottom:2px solid blueviolet;
+}
+
+.body{
+    margin: 30px;
+    
+}
+
+
+.border-blue{
+
+   
+    
+}
