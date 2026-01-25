@@ -4,7 +4,7 @@
     
 }
 .card{
-    color: rgb(224, 255, 20);
+    color: rgb(17, 17, 17);
     margin-left: auto;
     margin-right: auto;
     width: 600px;
@@ -12,7 +12,7 @@
     padding: 20px;
     text-align: center;
     justify-content:space-around;
-    background-color: rgb(250, 67, 0);
+    background-color: rgba(246, 238, 6, 0.953);
     border-bottom:2px solid blueviolet;
 }
 
@@ -22,8 +22,3 @@
 }
 
 
-.border-blue{
-
-   
-    
-}
