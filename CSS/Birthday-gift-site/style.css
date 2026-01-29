@@ -1,0 +1,117 @@
+body{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    background-color: blue;   
+    background:linear-gradient(#FFE4E1,#FF1493);
+}
+
+h1,h2,h4{
+
+    color: aliceblue;
+    text-shadow:  0 0 5px black;
+}
+
+#img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 255, 132);
+}
+
+
+#bday-age{
+    background-color: rgb(0, 229, 255);
+    padding: 5px 8px 5px 8px;
+    border: 5px  ;
+    border-radius: 4px  ;
+    margin-bottom:2px;
+}
+
+#bday-date{
+    background-color: rgb(0, 200, 255);
+    margin-top:10px;
+    padding: 5px 8px 5px 8px;
+    border: 5px  ;
+    border-radius: 4px  ;
+
+}
+
+
+.header{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-wrap{
+
+        
+        width: 500px;
+        height: 500px;
+        border: 6px solid rgb(148, 18, 247);
+        border-radius: 6px;
+        background-image: url(Image/gift-cover.jpg);
+        background-size: cover;
+        margin: 20px auto;        
+       
+}
+
+.gift-wrap:hover{
+
+    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc251Ym5jNWo1MGpsdW92N3F0eDMwc2w5MzZybWJmazRvM2x4d3gwMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y3RvwTIZz0Xh4LNcTE/giphy.gif");
+}
+
+.gift-one-section{
+    margin-top: 100px;
+}
+
+.hover{
+    margin-bottom:0;
+}
+.wish{
+    
+    margin-top:  5px;
+}
+
+.reaction{
+
+    margin-top: 50px;
+}
+
+
+#gift-wrap-reaction:hover{
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHluYXFqMzByZHUydW55OGpmaGl2emNzdnA5aWU0cnRoa254eThoNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jsqEpvJ5Qb6Ml6zM0k/giphy.gif");
+}
+
+#reaction-two:hover{
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnU3bmdybjNmamw3MmVxejUzc3RoNDJnOGFyNGFzbXpodDIzZG91ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pPXf0Za4dTcnTUi7A2/giphy.gif");
+    background-size: cover;
+}
+
+#your-gift:hover{
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjVucmxncWN2eXBxZ245M3JhNzNkZDczYXFqeXluODJneXJheHJkZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aumushJZgIrjaFxLuw/giphy.gif");
+}
+
+
+
+#happy-gift{
+    width:1100px;
+    height: 850px;
+    
+}
+
+#happy-gift:hover{
+
+    background-image: url("Image/Bubububu.png");
+    background-size:cover;
+}
+
+#footer{
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a{
+    color: whitesmoke;
+}
