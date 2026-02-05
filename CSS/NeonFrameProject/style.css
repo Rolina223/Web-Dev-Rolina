@@ -1,0 +1,100 @@
+*{
+   margin: 0;
+}
+
+body{
+
+    width:100vw;
+    height: 100vh;
+    background-color: #020815;
+}
+
+.container{
+
+    width:300px;
+    height:120px;
+
+    background-color:#0b1c2d;
+    border:2px solid #00f7ff;
+    color:#00f7ff;
+
+    font-size:28px;
+    font-weight:bold;
+
+    position:absolute;
+    top:20px;
+    left:20px;
+
+    /* NEON GLOW */
+    box-shadow:
+    0 0 10px rgba(0,247,255,0.6),
+    0 0 30px rgba(0,247,255,0.4);
+
+    text-shadow:
+    0 0 8px rgba(0,247,255,0.8);
+
+    transition:
+    width 3s linear,
+    height 5s ease,
+    box-shadow 0.5s linear;
+}
+
+    .container:hover{
+                       
+        width:100vw;
+        height:100vh;
+
+        box-shadow:
+        0 0 30px rgba(0,247,255,0.8),
+        0 0 80px rgba(0,247,255,0.6);
+                       
+    }
+
+
+    .box{
+
+        width:320px;
+        height:130px;
+
+        background:#070912;
+        border:1.5px solid #00ff9c;
+
+        color:#e8fff6;
+
+        font-size:28px;
+        font-weight:600;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        position:absolute;
+        top:50%;
+        left:50%;
+
+        opacity:0;
+
+        box-shadow:
+            0 0 12px rgba(0,255,156,0.5),
+            0 0 30px rgba(0,255,156,0.35);
+
+            text-shadow:
+             0 0 10px rgba(0,255,156,0.8);
+
+            transition: opacity 0.6s ease;
+    }
+
+
+.container:hover{
+
+       width:95vw;
+    height:95vh;
+
+     box-shadow:
+        0 0 20px rgba(0,255,156,0.6),
+        0 0 60px rgba(0,255,156,0.35);
+ }
+
+ .container:hover .box{
+    opacity:1;
+  }
