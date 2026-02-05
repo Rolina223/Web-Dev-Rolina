@@ -1,0 +1,166 @@
+         *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container{
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                background-color: #050b1a;
+                border: 5px solid black; 
+                box-shadow: inset 0 0 30px rgba(0,247,255,0.2);
+                
+            }
+            #circle{
+                background-color: #081824;
+                border: 3px solid #00ffe0;
+            }
+
+            .box1, #box2, #circle{
+                box-shadow:
+                    0 0 8px  #00f7ff,
+                    0 0 16px #00f7ff,
+                    0 0 32px rgba(0,247,255,0.8);
+            }
+
+            .box1{
+
+                width: 180px;
+                height: 30px;
+                border-radius: 6px;
+                 background-color: #0b1c2d; /* dark blue panel */
+                 border: 2px solid #00f7ff;
+                margin: 10px;
+                position: relative;
+               animation:
+                3s ease-in-out 2s infinite alternate rightMovement,
+                1.5s ease-in-out infinite alternate neonPulse;
+            }
+
+            @keyframes rightMovement {
+
+                from{
+
+                    top: 0;
+                    left: 0;;
+                }
+
+                to{
+
+                    top: 0;
+                    left: 1300px;
+
+                }
+                
+            }
+
+            #box2{
+
+                width: 180px;
+                height: 30px;
+                border-radius: 6px;
+                background-color: #0b1c2d; /* dark blue panel */
+                 border: 2px solid #00f7ff;
+                margin: 10px;
+                 position: relative;
+               animation:
+                3s ease-in-out 2s infinite alternate leftMovement,
+                1.5s ease-in-out infinite alternate neonPulse;
+
+                    }
+
+
+              @keyframes leftMovement {
+
+                from{
+
+                    top:600px;
+                    left:1300px;
+                }
+
+                to{
+
+                    top: 600px;
+                    left: 0;
+
+                }
+                
+            }
+
+            #circle{
+
+                 width: 80px;
+                height: 80px;
+                border-radius: 50px;
+                 background-color: #0b1c2d; /* dark blue panel */
+                border: 2px solid #00f7ff;
+                margin: 10px;
+                position: absolute;
+                 /* position: relative; */
+                 top: 30%;
+                 left: 40%;
+                 animation:
+                3s ease-in-out 2s infinite alternate circleMovement,
+                1.5s ease-in-out infinite alternate neonPulse;
+
+            }
+
+            @keyframes circleMovement {
+
+                 0%{ top: 5%; left: 5%; }
+                30%{ top: 10%; left: 70%; }
+                60%{ top: 70%; left: 15%; }
+                100%{ top: 20%; left: 70%; }
+
+            }
+
+                    @keyframes neonPulse {
+            from{
+                box-shadow:
+                    0 0 8px  #00f7ff,
+                    0 0 16px #00f7ff,
+                    0 0 30px rgba(0,247,255,0.7);
+            }
+
+            to{
+                box-shadow:
+                    0 0 14px #00f7ff,
+                    0 0 30px #00f7ff,
+                    0 0 60px rgba(0,247,255,1);
+            }
+        }
+
+            .bg-text{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                 transform: translate(-50%, -50%); /*Iska mtlb (width ka 50% left,height ka 50% up)(x-axis Left,right,yaxis -up-down) */
+                font-size: 90px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                color: rgba(0, 247, 255, 0.15); /* faint neon */
+                text-shadow:
+                    0 0 10px rgba(0, 247, 255, 0.682),
+                    0 0 30px rgba(0,247,255,0.25),
+                    0 0 60px rgba(0,247,255,0.2); 
+            }
+
+            .bg-text{
+                     animation: 4s ease-in-out infinite alternate textGlow;
+                 }
+
+
+             @keyframes textGlow {
+                from{
+                    text-shadow:
+                        0 0 10px rgba(0,247,255,0.2),
+                        0 0 30px rgba(0,247,255,0.2);
+                }
+                to{
+                    text-shadow:
+                        0 0 20px rgba(0, 247, 255, 0.515),
+                        0 0 60px rgba(0, 247, 255, 0.629);
+                }
+            }
